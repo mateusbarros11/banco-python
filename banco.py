@@ -5,9 +5,7 @@ def limpar_tela():
         os.system("cls")
     else:
         os.system("clear")
-
-nome = "Mateus"
-saldo = 500
+
 extrato_movimentacoes = []
 
 def menu():
@@ -15,7 +13,7 @@ def menu():
 
         limpar_tela()
 
-        print(f"Bem-vindo novamente, {nome}.\n")
+        print(f"Bem-vindo, {nome}.\n")
 
         print("===== MENU =====")
         print("1 - Depositar")
@@ -214,16 +212,8 @@ def pix():
 def sair():
 
     print("Até mais!")
-    exit()
+    exit()
 
-email_correto = "mateus@email.com"
-senha_correta = "1234"
-
-email = input("Digite o seu email: ")
-senha = input("Digite sua senha: ")
-
-if email == email_correto and senha == senha_correta:
-    menu()
-
-else:
-    print("Email ou senha incorretos.")
+nome = input('Digite seu nome: ')
+email = input('Digite o seu email: ')
+senha = input('Digite sua senha: ')
