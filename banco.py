@@ -5,7 +5,8 @@ def limpar_tela():
         os.system("cls")
     else:
         os.system("clear")
-
+
+saldo = 0
 extrato_movimentacoes = []
 
 def menu():
@@ -216,4 +217,5 @@ def sair():
 
 nome = input('Digite seu nome: ')
 email = input('Digite o seu email: ')
-senha = input('Digite sua senha: ')
+senha = input('Digite sua senha: ')
+menu()
